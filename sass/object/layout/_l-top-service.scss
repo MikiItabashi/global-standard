@@ -1,0 +1,6 @@
+.l-top-news {
+    margin: rem(60) 0 rem(60);
+    @include mq('tab') {
+        margin: rem(121) 0 rem(-89);
+    }
+}

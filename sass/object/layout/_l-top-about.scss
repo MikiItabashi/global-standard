@@ -1,0 +1,8 @@
+.l-top-about {
+    margin: rem(60) 0 0;
+    padding-bottom: rem(136);
+    @include mq('tab') {
+        padding-top: rem(105);
+        padding-bottom: rem(93);
+    }
+}

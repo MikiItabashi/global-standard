@@ -16,11 +16,5 @@
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
-  <header class="">
-    <a href="#" class="c-btn">資料をダウンロードする</a>
-    <a href="#" class="c-btn c-btn--main">資料をダウンロードする</a>
-    <a href="#" class="c-btn c-btn--arrow">View more</a>
-    <a href="#" class="c-btn c-btn--accent">View more</a>
-    <a href="#" class="c-more-link">View more</a>
-    <a href="#" class="c-more-link c-more-link--rev">View more</a>
+  <header class="p-header">
   </header>

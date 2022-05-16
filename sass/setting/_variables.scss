@@ -15,7 +15,7 @@ $font-family-second:'Fira Sans',
 sans-serif;
 $font-size-base: 14px; // ベースフォントサイズ
 $font-weight-base: 500; // ベースフォントウェイト
-$lh: 1.6; // ベース行間
+$lh: calc(24 / 14); // ベース行間
 // ---
 // レイアウト
 // ---

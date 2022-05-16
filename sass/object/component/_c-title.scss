@@ -1,0 +1,18 @@
+.c-title {
+    color: $main;
+}
+
+.c-title__en {
+    font-family: $font-family-second;
+    font-size: rem(52);
+    line-height: 1;
+    text-transform: uppercase;
+    @include mq('tab') {
+        font-size: rem(60);
+    }
+}
+
+.c-title__ja {
+    font-weight: 700;
+    font-size: rem(16);
+}

@@ -1,0 +1,82 @@
+.p-top-about {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        background-image: url(../img/bg-case-1.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        right: 0;
+        bottom: 0;
+        width: 78.6666%;
+        height: 37.669%;
+        z-index: -1;
+    }
+    @include mq('tab') {
+        &::after {
+            background-image: url(../img/bg-company.jpg);
+            top: 0;
+            width: 39.0625%;
+            height: 100%;
+        }
+    }
+}
+
+.p-top-about__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-top-about__heading {
+    display: contents;
+    @include mq('tab') {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.p-top-about__title {
+    order: 1;
+}
+
+.p-top-about__body {
+    order: 2;
+    @include mq('tab') {
+        margin-top: rem(21);
+        order: 3;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+}
+
+.p-top-about__text {
+    margin-top: rem(60);
+    @include mq('tab') {
+        margin-top: 0;
+        width: 35%;
+        padding-right: rem(40);
+    }
+}
+
+.p-top-about__img {
+    margin-top: rem(32);
+    padding-top: rem(40);
+    @include mq('tab') {
+        margin-top: 0;
+        padding-top: 0;
+        width: 65%;
+    }
+}
+
+.p-top-about__link {
+    margin-top: rem(32);
+    text-align: right;
+    order: 3;
+    @include mq('tab') {
+        order: 2;
+        margin-top: 0;
+    }
+}

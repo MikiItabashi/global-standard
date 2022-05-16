@@ -1,0 +1,131 @@
+.p-top-service {
+    @include mq('tab') {
+        padding-bottom: rem(326);
+    }
+}
+
+.p-top-service__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-top-service__heading {
+    display: contents;
+    @include mq('tab') {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.p-top-service__title {
+    order: 1;
+}
+
+.p-top-service__body {
+    margin-top: rem(65);
+    padding-left: rem(15);
+    order: 2;
+    @include mq('tab') {
+        order: 3;
+        margin-top: rem(87);
+        padding-left: 0;
+    }
+}
+
+.p-top-service__items {
+    @include mq('tab') {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.p-top-service__item:not(:last-child) {
+    margin-bottom: rem(74);
+    @include mq('tab') {
+        margin-bottom: 0;
+        margin-right: rem(70);
+    }
+}
+
+.p-top-service__item:nth-child(2) {
+    @include mq('tab') {
+        margin-top: rem(35);
+    }
+}
+
+.p-top-service__item:nth-child(3) {
+    @include mq('tab') {
+        margin-top: rem(70);
+    }
+}
+
+.p-top-service__item {
+    position: relative;
+    @include mq('tab') {
+        width: calc((100% - #{rem(70)} * 2) / 3);
+    }
+}
+
+.p-top-service__num {
+    position: absolute;
+    content: "";
+    width: 100%;
+    max-width: rem(98);
+    right: 0;
+    top: rem(-40);
+    @include mq('tab') {
+        max-width: rem(109);
+        top: rem(-50);
+    }
+}
+
+.p-top-service__img {
+    width: 100%;
+    position: relative;
+    &::before {
+        padding-top: 133.4375%;
+        display: block;
+        content: "";
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+.p-top-service___name {
+    display: inline-block;
+    position: absolute;
+    bottom: rem(33);
+    left: rem(-10);
+    font-weight: 700;
+    font-size: rem(28);
+    color: $main;
+    line-height: 2;
+}
+
+.p-top-service___name span {
+    background: linear-gradient(transparent 0%, $background 0%);
+    padding: rem(2);
+}
+
+.p-top-service__text {
+    margin-top: rem(16);
+}
+
+.p-top-service__link {
+    margin-top: rem(32);
+    text-align: right;
+    order: 3;
+    @include mq('tab') {
+        order: 2;
+        margin-top: 0;
+    }
+}

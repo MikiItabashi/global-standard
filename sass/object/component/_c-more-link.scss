@@ -2,32 +2,43 @@
 .c-more-link::after {
     position: absolute;
     content: "";
-    top: 50%;
+    top: 65%;
     right: rem(20);
     transform: translateY(-50%);
+    z-index: 2;
 }
 
 .c-more-link::before {
-    bottom: -8px;
-    left: 15%;
     /*下線の形状*/
-    width: 85%;
-    height: 5px;
-    background: red;
+    width: rem(64);
+    height: 2px;
+    background: $background;
     /*アニメーションの指定*/
     transition: all .3s;
 }
 
 .c-more-link::after {
-    bottom: -3px;
-    right: 0;
     /*矢印の形状*/
-    width: 15px;
-    height: 5px;
-    background: red;
+    top: 40%;
+    width: rem(15);
+    height: 2px;
+    background: $background;
     transform: rotate(35deg);
     /*アニメーションの指定*/
     transition: all .3s;
+}
+
+.c-more-link span {
+    position: absolute;
+    width: rem(40);
+    height: rem(40);
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #FFF400;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1;
 }
 
 .c-more-link {
@@ -38,11 +49,41 @@
     line-height: 1;
     padding-right: rem(97);
     color: $background;
-    // 後で消す
-    background: black;
-    @include mq('tab') {}
+}
+
+.c-more-link:hover {
+    @include mq('tab') {
+        &.c-more-link::before {
+            width: rem(74);
+            right: rem(10);
+        }
+        &.c-more-link::after {
+            right: rem(10);
+        }
+    }
 }
 
 .c-more-link--rev {
-    color: $text-color;
+    color: $main;
+    @include mq('tab') {
+        color: $text-color;
+    }
+}
+
+.c-more-link--rev span {
+    background: #FFF400;
+}
+
+.c-more-link--rev::before {
+    background: $main;
+    @include mq('tab') {
+        background: $text-color;
+    }
+}
+
+.c-more-link--rev::after {
+    background: $main;
+    @include mq('tab') {
+        background: $text-color;
+    }
 }
