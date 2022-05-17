@@ -1,0 +1,53 @@
+.p-mv {}
+
+.p-mv__inner {
+    position: relative;
+    margin-left: rem(40);
+    @include mq('tab') {
+        margin-left: rem(91);
+    }
+}
+
+.p-mv__content {
+    position: absolute;
+    bottom: rem(20);
+    left: rem(-20);
+    z-index: 2;
+    @include mq('tab') {
+        bottom: rem(60);
+        left: rem(-41);
+    }
+}
+
+.p-mv__main {
+    display: inline-block;
+    font-family: $font-family-second;
+    text-transform: uppercase;
+    font-size: rem(40);
+    color: $main;
+    // line-height: rem(48 / 40);
+    @include mq('tab') {
+        font-size: rem(60);
+        // line-height: rem(72 / 60);
+    }
+}
+
+.p-mv__main span {
+    background: linear-gradient(transparent 0%, $background 0%);
+    padding: rem(2);
+}
+
+.p-mv__lead {
+    display: inline-block;
+    font-weight: 700;
+    font-size: rem(16);
+    color: $background;
+    background: linear-gradient(transparent 0%, $main 0%);
+    padding: rem(2);
+    @include mq('tab') {
+        font-size: rem(20);
+        // line-height: rem(29 / 20);
+    }
+}
+
+.p-mv__lead span {}

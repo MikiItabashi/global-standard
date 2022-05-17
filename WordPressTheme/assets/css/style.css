@@ -587,6 +587,10 @@ summary {
 	width: 100%;
 }
 
+.l-mv {
+	padding-top: 3.75rem;
+}
+
 .l-top-about {
 	margin: 3.75rem 0 0;
 	padding-bottom: 8.5rem;
@@ -805,6 +809,40 @@ summary {
 	display: inline-block;
 	font-size: 0.75rem;
 	margin-top: 2.5rem;
+}
+
+.p-mv__inner {
+	margin-left: 2.5rem;
+	position: relative;
+}
+
+.p-mv__content {
+	bottom: 1.25rem;
+	left: -1.25rem;
+	position: absolute;
+	z-index: 2;
+}
+
+.p-mv__main {
+	color: #023E78;
+	display: inline-block;
+	font-family: "Fira Sans", sans-serif;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+
+.p-mv__main span {
+	background: linear-gradient(transparent 0%, #fff 0%);
+	padding: 0.125rem;
+}
+
+.p-mv__lead {
+	background: linear-gradient(transparent 0%, #023E78 0%);
+	color: #fff;
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 700;
+	padding: 0.125rem;
 }
 
 .p-top-about {
@@ -1153,6 +1191,10 @@ html {
 	padding-right: 25px;
 }
 
+.l-mv {
+	padding-top: 6.25rem;
+}
+
 .l-top-about {
 	padding-bottom: 5.8125rem;
 	padding-top: 6.5625rem;
@@ -1240,6 +1282,23 @@ html {
 .p-footer__copyright {
 	font-size: 0.875rem;
 	margin-top: 5rem;
+}
+
+.p-mv__inner {
+	margin-left: 5.6875rem;
+}
+
+.p-mv__content {
+	bottom: 3.75rem;
+	left: -2.5625rem;
+}
+
+.p-mv__main {
+	font-size: 3.75rem;
+}
+
+.p-mv__lead {
+	font-size: 1.25rem;
 }
 
 .p-top-about::after {

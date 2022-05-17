@@ -1,0 +1,6 @@
+.l-mv {
+    padding-top: rem(60);
+    @include mq('tab') {
+        padding-top: rem(100);
+    }
+}

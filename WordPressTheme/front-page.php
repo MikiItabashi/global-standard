@@ -1,7 +1,36 @@
 <?php get_header(); ?>
 
-<p class="u-mobile">aaaaaaaa</p>
-<p class="u-desktop">bbbbbbb</p>
+<div class="p-mv l-mv">
+    <div class="p-mv__inner">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/mv1.jpg" media="(min-width: 768px)" />
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/mv-sp1.jpg" alt="会議の写真" />
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/mv2.jpg" media="(min-width: 768px)" />
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/mv-sp2.jpg" alt="スポーツの写真" />
+                    </picture>
+                </div>
+                <div class="swiper-slide">
+                    <picture>
+                        <source srcset="<?php echo get_template_directory_uri() ?>/assets/img/mv3.jpg" media="(min-width: 768px)" />
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/img/mv-sp3.jpg" alt="国際交流の写真" />
+                    </picture>
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="p-mv__content">
+            <p class="p-mv__main"><span>you can </span><br class="u-mobile"><span>change </span><br><span>the world</span></p><br>
+            <p class="p-mv__lead"><span>世界で活躍できるグローバルな人材を育てる</span></p>
+        </div>
+    </div>
+</div>
 
 <section class="p-top-about l-top-about c-bg-skew">
     <div class="p-top-about__inner l-inner">
